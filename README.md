@@ -53,4 +53,5 @@ Once the server is running, open the following URL in your web browser:
 
 ## Special Thanks to:
 [Kaganecee](https://codeload.github.com/kaganecee/nodejs-chat-app/zip/refs/heads/master) for providing the foundation for this project.
-And my 
+
+And a very special thanks to Mr. Guile, who help fuel my desire to learn web design.
