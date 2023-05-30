@@ -46,3 +46,11 @@ node src/index.js
 Once the server is running, open the following URL in your web browser:
 
 [http://localhost:3000](http://localhost:3000)
+
+
+
+
+
+## Special Thanks to:
+[Kaganecee](https://codeload.github.com/kaganecee/nodejs-chat-app/zip/refs/heads/master) for providing the foundation for this project.
+And my 
