@@ -41,15 +41,30 @@ or
 ```bash
 node src/index.js
 ```
-
 ### Access the application
 Once the server is running, open the following URL in your web browser:
 
 [http://localhost:3000](http://localhost:3000)
 
+If you are connecting from a LAN device, follow these steps:
+1. Open a terminal or command prompt on the host machine.
+2. Run the following command to get your local IP address:
 
+   **Windows** (using `ipconfig`):
+   ```bash
+   ipconfig
+   ```
+  **MacOS / Linux** (using `ifconfig`):
+  ```bash
+  ifconfig
+  ```
+  
+3. Look for the *IPv4* Address entry in the output of the command. It should display your local IP address.
 
-
+On the LAN device, open a web browser and enter the following URL, replacing <your_local_ip_address> with the IP address obtained in step 3:
+  ```bash
+  http://<your_local_ip_address>:3000
+  ```
 
 ## Special Thanks to:
 [Kaganecee](https://codeload.github.com/kaganecee/nodejs-chat-app/zip/refs/heads/master) for providing the foundation for this project.
