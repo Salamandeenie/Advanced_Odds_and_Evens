@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="css/styles.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <h1>Join</h1>
+                <form action="./chat.html">
+                    <label>Display name</label>
+                    <input type="text" name="username" placeholder="Display name" required>
+                    <label>Room</label>
+                    <input type="text" name="room" placeholder="Room" required>
+                    <button style="aspect-ratio: 4/1; margin:0; margin-bottom: 10px">Join</button>
+                </form>
+                <button id="htp" style="aspect-ratio: 4/1; margin:0;">How to play</button>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                $('#htp').click(function() {
+                    window.location.href = 'about.html';
+                });
+            });
+        </script>
+    </body>
+</html>
