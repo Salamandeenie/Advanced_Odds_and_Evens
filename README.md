@@ -31,8 +31,8 @@ Navigate to the project directory and install the required NPM modules by runnin
 npm install
 ```
 
-### Launch the chat server
-To start the chat server, run one of the following commands:
+### Launch the server
+To start the server, run one of the following commands:
 
 ```bash
 npm run dev
