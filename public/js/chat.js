@@ -57,10 +57,9 @@ socket.on("turnAlert", (secretNumberInfo) => {
 });
 
 socket.on("roomData", ({ room, users, turnCounter }) => {
-    const turnname = (turnCounter % 2 === 0) ? "Odds" : "Evens"; // Determine current turn player's name
     const html = Mustache.render(sidebarTemplate, {
       room,
-      turnname, // Pass the turn name to the template
+      turnname: turnFinder(turnCounter), // Pass the turn name to the template
       turn: turnCounter, // Pass the turn counter to the template
       users,
     });
@@ -70,6 +69,15 @@ socket.on("roomData", ({ room, users, turnCounter }) => {
 socket.on("secretNumber", (number) => {
   secretNumber = number; // Update the secret number when received from the server
 });
+
+function turnFinder(turncount)
+{
+  if(turncount % 2 == 0)
+  {
+    return "Odds";
+  }
+  else return "Evens";
+}
 
 $messageForm.addEventListener("submit", (e) => {
   e.preventDefault();
